@@ -1,0 +1,291 @@
+{
+    "designSystem": {
+      "name": "Modern Environmental/Tech Design System",
+      "category": "Corporate/Environmental Technology",
+      "style": "Contemporary minimalist with bold typography and immersive imagery",
+      
+      "colorPalette": {
+        "primary": {
+          "background": "#ffffff",
+          "text": "#000000",
+          "accent": "#333333"
+        },
+        "secondary": {
+          "cards": "#f8f9fa",
+          "borders": "#e9ecef",
+          "muted": "#6c757d"
+        },
+        "emphasis": {
+          "cta": "#000000",
+          "hover": "#333333",
+          "focus": "#007bff"
+        }
+      },
+      
+      "typography": {
+        "headings": {
+          "primary": {
+            "fontSize": "clamp(3rem, 8vw, 8rem)",
+            "fontWeight": "900",
+            "lineHeight": "0.9",
+            "letterSpacing": "-0.02em",
+            "textTransform": "uppercase",
+            "style": "Ultra-bold, high-impact display typography"
+          },
+          "secondary": {
+            "fontSize": "clamp(1.5rem, 4vw, 3rem)",
+            "fontWeight": "700",
+            "lineHeight": "1.2",
+            "style": "Bold section headings"
+          },
+          "tertiary": {
+            "fontSize": "clamp(1.2rem, 2.5vw, 1.8rem)",
+            "fontWeight": "600",
+            "lineHeight": "1.3",
+            "style": "Subsection headings"
+          }
+        },
+        "body": {
+          "fontSize": "1rem",
+          "fontWeight": "400",
+          "lineHeight": "1.6",
+          "maxWidth": "65ch"
+        },
+        "caption": {
+          "fontSize": "0.875rem",
+          "fontWeight": "400",
+          "color": "#6c757d"
+        }
+      },
+      
+      "layout": {
+        "structure": {
+          "maxWidth": "1400px",
+          "margin": "0 auto",
+          "padding": "0 1rem"
+        },
+        "sections": {
+          "hero": {
+            "height": "100vh",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "position": "relative",
+            "backgroundAttachment": "fixed",
+            "backgroundSize": "cover",
+            "backgroundPosition": "center"
+          },
+          "content": {
+            "padding": "4rem 0",
+            "marginBottom": "4rem"
+          },
+          "fullWidth": {
+            "width": "100vw",
+            "marginLeft": "calc(-50vw + 50%)",
+            "marginRight": "calc(-50vw + 50%)"
+          }
+        },
+        "grid": {
+          "default": {
+            "display": "grid",
+            "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))",
+            "gap": "2rem",
+            "alignItems": "start"
+          },
+          "asymmetric": {
+            "display": "grid",
+            "gridTemplateColumns": "1fr 2fr",
+            "gap": "3rem",
+            "alignItems": "center"
+          },
+          "masonry": {
+            "display": "grid",
+            "gridTemplateColumns": "repeat(auto-fit, minmax(250px, 1fr))",
+            "gap": "1.5rem",
+            "gridAutoRows": "min-content"
+          }
+        }
+      },
+      
+      "components": {
+        "navigation": {
+          "position": "fixed",
+          "top": "0",
+          "width": "100%",
+          "background": "rgba(255, 255, 255, 0.95)",
+          "backdropFilter": "blur(10px)",
+          "padding": "1rem 0",
+          "zIndex": "1000",
+          "display": "flex",
+          "justifyContent": "space-between",
+          "alignItems": "center"
+        },
+        
+        "cards": {
+          "background": "#ffffff",
+          "borderRadius": "12px",
+          "boxShadow": "0 4px 20px rgba(0, 0, 0, 0.08)",
+          "padding": "2rem",
+          "transition": "transform 0.3s ease, box-shadow 0.3s ease",
+          "hover": {
+            "transform": "translateY(-4px)",
+            "boxShadow": "0 8px 40px rgba(0, 0, 0, 0.12)"
+          }
+        },
+        
+        "imageContainers": {
+          "borderRadius": "12px",
+          "overflow": "hidden",
+          "aspectRatio": "16/9",
+          "position": "relative",
+          "background": "linear-gradient(45deg, #f0f0f0, #e0e0e0)"
+        },
+        
+        "buttons": {
+          "primary": {
+            "background": "#000000",
+            "color": "#ffffff",
+            "border": "none",
+            "padding": "0.75rem 2rem",
+            "borderRadius": "50px",
+            "fontSize": "0.875rem",
+            "fontWeight": "600",
+            "textTransform": "uppercase",
+            "letterSpacing": "0.05em",
+            "transition": "all 0.3s ease",
+            "cursor": "pointer"
+          },
+          "secondary": {
+            "background": "transparent",
+            "color": "#000000",
+            "border": "2px solid #000000",
+            "padding": "0.75rem 2rem",
+            "borderRadius": "50px",
+            "fontSize": "0.875rem",
+            "fontWeight": "600",
+            "textTransform": "uppercase",
+            "letterSpacing": "0.05em",
+            "transition": "all 0.3s ease",
+            "cursor": "pointer"
+          }
+        },
+        
+        "overlays": {
+          "hero": {
+            "position": "absolute",
+            "top": "0",
+            "left": "0",
+            "right": "0",
+            "bottom": "0",
+            "background": "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1))",
+            "zIndex": "1"
+          },
+          "content": {
+            "position": "relative",
+            "zIndex": "2",
+            "color": "#ffffff"
+          }
+        },
+        
+        "infoCards": {
+          "background": "#000000",
+          "color": "#ffffff",
+          "padding": "1.5rem",
+          "borderRadius": "8px",
+          "fontSize": "0.875rem",
+          "lineHeight": "1.4",
+          "maxWidth": "200px"
+        }
+      },
+      
+      "animations": {
+        "scrollEffects": {
+          "parallax": "Background images move slower than content",
+          "fadeIn": "Elements fade in as they enter viewport",
+          "slideUp": "Content slides up from bottom on scroll"
+        },
+        "hover": {
+          "cards": "Subtle lift and shadow increase",
+          "buttons": "Color inversion and scale",
+          "images": "Subtle zoom and overlay effects"
+        },
+        "transitions": {
+          "default": "0.3s ease",
+          "slow": "0.6s ease",
+          "spring": "0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)"
+        }
+      },
+      
+      "spacing": {
+        "sections": "clamp(4rem, 8vw, 8rem)",
+        "content": "clamp(2rem, 4vw, 4rem)",
+        "elements": "clamp(1rem, 2vw, 2rem)",
+        "tight": "0.5rem",
+        "loose": "3rem"
+      },
+      
+      "breakpoints": {
+        "mobile": "768px",
+        "tablet": "1024px",
+        "desktop": "1200px",
+        "large": "1400px"
+      },
+      
+      "contentPatterns": {
+        "hero": {
+          "structure": "Full-screen background image with centered large typography",
+          "elements": ["Background image", "Large heading", "Subtitle", "CTA button"],
+          "positioning": "Center-aligned with vertical centering"
+        },
+        
+        "twoColumn": {
+          "structure": "Image on one side, content on the other",
+          "ratio": "1:1 or 2:3",
+          "alignment": "Center-aligned vertically",
+          "spacing": "Large gap between columns"
+        },
+        
+        "cardGrid": {
+          "structure": "Grid of equal-height cards",
+          "columns": "Auto-fit with minimum width",
+          "cardContent": ["Image", "Title", "Description", "Metadata"],
+          "spacing": "Consistent gaps"
+        },
+        
+        "projectShowcase": {
+          "structure": "Mixed layout with varying card sizes",
+          "elements": ["Project images", "Titles", "Categories", "Dates"],
+          "layout": "Masonry or asymmetric grid"
+        },
+        
+        "footer": {
+          "structure": "Full-width with company info and links",
+          "background": "Neutral or branded",
+          "content": ["Logo", "Navigation", "Contact", "Social links"]
+        }
+      },
+      
+      "imagery": {
+        "style": "High-quality, professional photography",
+        "subjects": ["Nature/landscapes", "Technology", "Architecture", "People in context"],
+        "treatment": "Natural color grading, high contrast",
+        "aspectRatios": ["16:9", "4:3", "1:1", "3:2"],
+        "overlay": "Subtle dark gradients for text readability"
+      },
+      
+      "accessibility": {
+        "colorContrast": "WCAG AA compliant",
+        "typography": "Readable font sizes and line heights",
+        "focusStates": "Clear focus indicators",
+        "altText": "Descriptive alternative text for images",
+        "semanticHTML": "Proper heading hierarchy and landmarks"
+      },
+      
+      "performance": {
+        "images": "Optimized and responsive",
+        "animations": "GPU-accelerated transforms",
+        "loading": "Lazy loading for below-the-fold content",
+        "fonts": "Efficient font loading strategies"
+      }
+    }
+  }
